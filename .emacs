@@ -5,10 +5,7 @@
                            ("melpa" . "http://elpa.emacs-china.org/melpa/")))
 ;; 禁用启动动画
 (setq inhibit-startup-message t)
-;; 关闭工具栏
-(tool-bar-mode -1) 
-;; 关闭菜单栏
-(menu-bar-mode -1) 
+ 
 ;; 关闭滚动条
 (scroll-bar-mode -1) 
 
@@ -24,10 +21,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (elpy tramp js2-mode evil company))))
+ '(menu-bar-mode nil)
+ '(package-selected-packages (quote (elpy tramp js2-mode evil company)))
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:family "微软雅黑" :foundry "outline" :slant normal :weight normal :height 143 :width normal)))))
