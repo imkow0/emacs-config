@@ -1,5 +1,5 @@
-(require 'package)
 (package-initialize)
+(require 'package)
 ;; 加载新的库， M-x package-refresh-contents
 (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
                            ("melpa" . "http://elpa.emacs-china.org/melpa/")))
